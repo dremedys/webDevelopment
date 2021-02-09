@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="index.css">
+    <title>Instagram</title>
+</head>
+<body>
+    <main>
+        <div id="phone">
+            <img src="https://www.instagram.com/static/images/homepage/home-phones.png/43cc71bb1b43.png">
+            <div id="inside-phone">
+                <img id="inside-phone-img" src="https://www.instagram.com/static/images/homepage/screenshot5-2x.jpg/5e04169b9308.jpg">
+
+            </div>
+        </div>
+        <div id="auth">
+            <div id="login">
+                <img id="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Instagram_logo.svg/800px-Instagram_logo.svg.png">
+                <input class="log-block" placeholder="Phone number,username, or email">
+                <input class="log-block" placeholder="Password">
+                <button class="log-block" id="log-btn">Log In</button>
+                <div id="or-block">
+                    <hr  class="or-line"> <span>OR </span> <hr class="or-line">
+                </div>
+
+                <a id="facebook">Log In with Facebook</a>
+                <a id="forgot-pass">Forgot password?</a>
+            </div>
+
+
+            <div id="reg">
+                <p>Don't have an account?
+                    <a>Sign up</a>
+                </p>
+            </div>
+
+
+            <div id = "apps">
+                <a id="get-app">
+                    <p>Get the app.</p>
+                    <a class="get-img">
+                        <img src="https://www.instagram.com/static/images/appstore-install-badges/badge_ios_english-en.png/180ae7a0bcf7.png">
+                    </a>
+                    <a class="get-img">
+                        <img src="https://www.instagram.com/static/images/appstore-install-badges/badge_android_english-en.png/e9cd846dc748.png">
+                    </a>
+            </div>
+
+        </div>
+    </main>
+
+    <div class="bottom">
+        <div class="left">
+            <ul>
+                <li><a href="">ABOUT US</a></li>
+                <li><a href="">HELP</a></li>
+                <li><a href="">PRESS</a></li>
+                <li><a href="">API</a></li>
+                <li><a href="">JOBS</a></li>
+                <li><a href="">PRIVACY</a></li>
+                <li><a href="">TERMS</a></li>
+                <li><a href="">DIRECTORY</a></li>
+                <li><a href="">PROFILES</a></li>
+                <li><a href="">HASHTAGS</a></li>
+                <li><a href="">LANGUAGES</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="right">
+        <p>© 2020 INSTAGRAM FROM FACEBOOK</p>
+    </div>
+
+    <script>
+        photo = document.getElementById("inside-phone-img")
+        links = ["https://www.instagram.com/static/images/homepage/screenshot4-2x.jpg/b27a108592d8.jpg",
+        "https://www.instagram.com/static/images/homepage/screenshot3-2x.jpg/ff2c097a681e.jpg",
+            "https://www.instagram.com/static/images/homepage/screenshot5-2x.jpg/5e04169b9308.jpg"]
+        setInterval(()=>{
+            photo.src = links[Math.floor(Math.random() * links.length)];
+        },4000)
+    </script>
+</body>
+</html>

@@ -1,0 +1,182 @@
+@charset "utf-8";
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    width: auto;
+    height: 100%;
+    font-size: 1em;
+    font-family: "Segoe UI", sans-serif;
+    padding-top: 5%;
+    padding-left: 16%;
+}
+#phone{
+    position: relative;
+    display: inline-block;
+    z-index: 10;
+}
+#inside-phone{
+    display: inline;
+    position: absolute;
+    top: 16%;
+    left: 33%;
+
+}
+#inside-phone img{
+    width: 240px;
+
+}
+#auth{
+    display: inline-block;
+    /*margin-top: 65px;*/
+    position: relative;
+    top:-150px;
+    margin-left: 7%;
+    width: 260px;
+}
+
+#auth #login {
+    border: 1px solid silver;
+    height:  280px;
+}
+
+#auth #login #logo{
+    height:55px;
+    margin-left:50px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.log-block{
+    margin-left: 30px;
+    margin-right: 30px;
+    border: 1px solid silver;
+    border-radius: 2px;
+    background-color: rgba(168,165,164,0.1);
+    width: 185px;
+    height:20px;
+    margin-bottom: 10px;
+    padding: 5px;
+    padding-top: 3px;
+    font-size: 9px;
+}
+#log-btn{
+    background-color: deepskyblue;
+    color: white;
+    width: 198px;
+    height: 25px;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+#or-block{
+    margin-left: 30px;
+    margin-right: 30px;
+    font-size: 12px;
+    color: darkgray;
+}
+.or-line{
+    position: relative;
+    size: 1px;
+    top:-2.5px;
+    display: inline-block;
+    width: 82px;
+    border: 1px solid silver;
+    border-bottom: none;
+    border-left:none;
+    border-right: none;
+}
+#or-block span{
+    display: inline-block;
+    margin-right: 3px;
+    margin-left: 3px;
+    font-size: 10px;
+}
+#facebook{
+    display: block;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    color: rgba(0,66,168,1);
+    text-align: center;
+    font-size: 10px;
+    font-weight: bold;
+
+}
+#forgot-pass{
+    display: block;
+    text-align: center;
+    font-size: 9px;
+}
+
+
+#auth #reg {
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border:1px solid silver;
+    height: 50px;
+}
+
+#auth #reg p{
+    position: relative;
+    top:15px;
+}
+#auth #reg p a{
+    color:steelblue;
+    font-weight: bold;
+}
+
+#auth  p{
+    display: block;
+    margin-bottom: 15px;
+    font-size: 12px;
+    text-align: center;
+}
+#auth #apps{
+    margin-top: 15px;
+    text-align: center;
+}
+#auth .get-img{
+    text-align: center;
+
+}
+#auth .get-img img{
+    width: 110px;
+    height: auto;
+    padding: 0;
+}
+.bottom{
+    display: inline-block;
+
+    margin-left: 10%;
+    margin-top: 50px;
+}
+
+.bottom .left ul li{
+    display: inline-block;
+}
+
+.bottom .left ul li a{
+    text-decoration: none;
+    font-size: 10px;
+    color: gray;
+    text-align: center;
+    padding-right: 10px;
+
+}
+
+.right {
+    font-size: 12px;
+    margin-left: 25%;
+    display: block;
+    color: #8F8F8F;
+    margin-top: 20px;
+    padding-bottom: 30px;
+}
