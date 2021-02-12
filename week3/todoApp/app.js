@@ -6,28 +6,30 @@ function toHTML(txt) {
     `
 }
 
-document.addEventListener('click',(event)=>{
+document.addEventListener('click', (event) => {
     const btnType = event.target.dataset.btn
-    if(btnType =='delete'){
+    if (btnType == 'delete') {
         event.target.parentNode.remove()
-    }
-    else if(btnType=='done'){
-        event.target.parentNode.getElementsByTagName('span')[0].style.textDecoration = 'line-through'
+    } else if (btnType == 'done') {
+        if (event.target.parentNode.getElementsByTagName('span')[0].style.textDecoration != 'line-through')
+            event.target.parentNode.getElementsByTagName('span')[0].style.textDecoration = 'line-through'
+        else
+            event.target.parentNode.getElementsByTagName('span')[0].style.textDecoration = 'none'
     }
 })
 
 
-document.getElementById('add-btn').addEventListener('click',addNode)
+document.getElementById('add-btn').addEventListener('click', addNode)
 
-document.addEventListener('keyup',(event) =>{
-    if(event.keyCode===13){
+document.addEventListener('keyup', (event) => {
+    if (event.keyCode === 13) {
         addNode()
     }
 })
 
-function addNode(){
+function addNode() {
     const txt = document.getElementById('input-text').value
-    if(!txt.length){
+    if (!txt.length) {
         alert('Nothing to add')
         return
     }
