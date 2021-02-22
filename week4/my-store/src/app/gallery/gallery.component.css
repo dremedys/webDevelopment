@@ -1,0 +1,38 @@
+*{
+  outline: none;
+}
+#img-container{
+  padding-top: 5px;
+  display: flex;
+  justify-content: center;
+}
+
+img {
+  display: inline-block;
+  max-width: 200px;
+  width: auto;
+  height: 200px;
+
+}
+
+
+#prev{
+  display: inline-block;
+  position: relative;
+  width: 25px;
+  height: 20px;
+  top:-110px;
+  left:10px;
+  font-size: 10px;
+  border: none;
+
+}
+#next{
+  border: none;
+  position: relative;
+  width: 25px;
+  height: 20px;
+  top:-110px;
+  left:140px;
+  font-size: 10px;
+}

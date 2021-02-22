@@ -1,0 +1,74 @@
+*{
+  outline: none;
+}
+#container{
+  display: inline-block;
+  width: 200px;
+  height: 340px;
+  border: 1px solid rgb(232,232,232);
+  border-radius: 3px;
+  box-shadow: 0 0 6px rgba(0,0,0,0.1);
+  padding-bottom: 10px;
+}
+
+#info{
+  display: flex;
+  margin-right: 20px;
+  margin-left: 20px;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: -13px;
+
+}
+
+.description{
+  font-size: 11px;
+  font-family: Georgia;
+  max-height: 60px;
+
+
+
+}
+h1,p{margin: 0;}
+
+.name{
+  align-self: center;
+  font-size: 1.09rem;
+  font-family: Garamond, serif;
+  margin-bottom: 5px;
+  font-weight: 1000;
+  line-height: 100%;
+  cursor: pointer;
+}
+.name:hover{
+  color: rgba(14,12,12,0.5);
+}
+.rating{
+  margin-top: 4px;
+  font-size: 11px;
+  font-family: "Zilla Slab";
+  align-self: self-start;
+  color: #810e05;
+
+}
+.share-btn{
+  cursor: pointer;
+}
+.share-btn:hover{
+}
+.share-btn img{
+  width: 20px;
+  height: 20px;
+  background-size: cover;
+  overflow: hidden;
+}
+.share-btn img:hover{
+  filter: brightness(1.1);
+}
+.share-block{
+  align-self: flex-end;
+  display: inline-flex;
+  justify-content: space-between;
+  font-size: 12px;
+  align-items: center;
+}

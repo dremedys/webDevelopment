@@ -1,0 +1,32 @@
+html{
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: auto;
+}
+body{
+  width: auto;
+
+}
+#products{
+  box-sizing: border-box;
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+app-product-item{
+  width: 24%;
+  padding-bottom: 2%; /* 32:18, i.e. 16:9 */
+  margin-bottom: 2%; /* (100-32*3)/2 */
+}
+#header{
+  font-size: 33px;
+  text-align: center;
+  padding-top: 7px;
+  padding-bottom: 10px;
+  width: 100%;
+  background-color: black;
+  color: white;
+  font-family: "Courier New", serif;
+}
