@@ -1,0 +1,34 @@
+.products{
+  box-sizing: border-box;
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-evenly;
+}
+
+app-product-item{
+  width: 21%;
+  padding-bottom: 2%;
+  margin-bottom: 2%;
+}
+
+@media all and (max-width: 900px){
+  app-product-item{
+    width: 32%;
+  }
+}
+
+@media all and (max-width: 700px ) {
+  app-product-item{
+    width: 48%;
+  }
+}
+@media all and (max-width: 695px)  {
+  app-product-item{
+    width: 95%;
+    align-self: center;
+  }
+}
+li{
+ list-style-type: none;
+}

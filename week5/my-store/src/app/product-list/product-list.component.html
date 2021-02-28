@@ -1,0 +1,5 @@
+<ul class="products">
+  <li *ngFor="let iterItem of category.items">
+    <app-product-item [item]="iterItem" (newLikeEvent)="likeItem($event)" (newItemEvent)="removeItem($event)"></app-product-item>
+  </li>
+</ul>

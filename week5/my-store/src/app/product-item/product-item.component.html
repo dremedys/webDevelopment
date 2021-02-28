@@ -1,0 +1,20 @@
+<div id="container">
+  <app-gallery [links] = "item.images"></app-gallery>
+  <div id="info">
+    <a (click)="toAmazon()" class="name">{{item?.name}}</a>
+    <p class="description">{{item?.description}}</p>
+<!--    <p class="rating">Rating : {{item.rating}}</p>-->
+<!--    <div class="share-block"><span style="margin-right: 3px; color:grey; font-family:Arial;font-size: 9px ">Share</span>-->
+<!--      <a class="share-btn" (click)="toTelegram()"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Telegram_Messenger.png/768px-Telegram_Messenger.png"></a>-->
+<!--      <a class="share-btn"  (click)="toWhatsapp()"><img src="https://pngicon.ru/file/uploads/whatsapp.png"></a>-->
+<!--    </div>-->
+    <p style="color: red" >{{item.likes}}❤</p>
+    <div class="buttons">
+      <button (click)  = "onLike(item)">❤</button>
+      <button class="delete-btn" (click)="removeItem(item)">X</button>
+    </div>
+
+
+    </div>
+
+</div>

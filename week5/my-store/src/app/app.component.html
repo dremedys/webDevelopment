@@ -1,0 +1,13 @@
+
+<div id="header">My store app</div>
+<div class="buttons">
+  <button [class.selected]="iterCategory ===currentCategory" *ngFor="let iterCategory of categories;" (click)=changeCategory(iterCategory)>{{iterCategory.name}}</button>
+
+</div>
+<div *ngIf="currentCategory;else unset">
+  <app-product-list (newListLikeEvent)="likeeItem($event)" (newListEvent)="deleteItem($event)" [category]="currentCategory"></app-product-list>
+</div>
+<ng-template #unset>
+  <p style="text-align: center">Choose a category.</p>
+</ng-template>
+

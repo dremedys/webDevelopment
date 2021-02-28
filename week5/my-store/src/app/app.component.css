@@ -1,0 +1,37 @@
+html{
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: auto;
+  outline: none;
+}
+body{
+  width: auto;
+
+}
+.buttons{
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-evenly;
+}
+button{
+  border:1px solid silver;
+  border-radius: 2px;
+  width: 100px;
+  height: 30px;
+  font-family: "Zilla Slab";
+}
+
+#header{
+  font-size: 33px;
+  text-align: center;
+  padding-top: 7px;
+  padding-bottom: 10px;
+  width: 100%;
+  background-color: black;
+  color: white;
+  font-family: "Courier New", serif;
+}
+.selected{
+  background-color: #8F8F8F;
+}
