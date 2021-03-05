@@ -1,0 +1,14 @@
+<h4>Albums</h4>
+<div class="addAlbum">
+  <p>Add album</p>
+  <input #title placeholder="title">
+  <input #userId placeholder="userId">
+  <button (click)="addAlbum(title.value,(userId.value))">Add</button>
+</div>
+<ul>
+    <li *ngFor="let album of albumsService.albums">
+      <a routerLink="/albums/{{album.id}}">
+      {{album.title | uppercase}} </a>
+      <button class="remove-btn" (click)="removeAlbum(album)">X</button>
+    </li>
+</ul>

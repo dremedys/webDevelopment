@@ -1,0 +1,35 @@
+a{
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  margin-bottom: 5px;
+  font-size: 15px;
+  font-family: "Bookman Old Style";
+  color: black;
+}
+a:hover{
+  color:blue;
+}
+h4{
+  font-size: 30px;
+  text-align: center;
+}
+li{
+  width: 500px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.addAlbum{
+  margin-left: 100px;
+  display: flex;
+  justify-content: space-between;
+  width: 500px;
+  align-items: center;
+}
+p{
+  display: inline-block;
+  margin-right: 10px;
+  align-self: flex-start;
+}
